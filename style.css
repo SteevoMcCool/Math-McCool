@@ -41,13 +41,12 @@ body {
     margin: 50px auto;
     border-radius: 13.5%;
     background-image: radial-gradient(white 30%, #a1e4e9  );
-    transition: box-shadow 0.4s, flex-grow 0.4s;
+    transition: box-shadow 0.4s;
     text-align: center;
 }
 
 #mommy div:hover {
     box-shadow: 0px 0px 29px #0a8fbd;
-    flex-grow: 2;
 }
 
 #mommy h2 {
