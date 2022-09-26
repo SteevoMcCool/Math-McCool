@@ -33,7 +33,7 @@ body {
 }
 
 #mommy .box {
-    width: 300px;
+    width: 400px;
     min-width: 30%;
     max-width: 100%;
     aspect-ratio: 1;
@@ -49,6 +49,24 @@ body {
     box-shadow: 0px 0px 29px #0a8fbd;
 }
 
+.box a:link {
+    font-size: 20px;
+    color: #0000ff;
+
+}
+
+
+.box a:visited {
+    font-size: 20px;
+    color: #0000ff;
+}
+
+.box a:hover {
+    font-size: 20px;
+    color: #55bfd4;
+}
+
+
 #mommy h2 {
     font-size: 35px;
     font-weight: 600;
@@ -59,6 +77,7 @@ body {
 #mommy .main {
     width:  90%;
     margin: 0px auto;
+    margin-bottom: 10px;
     height: calc(92.5% - 75px);
     display: flex;
     flex-wrap: nowrap;
@@ -84,9 +103,9 @@ body {
 }
 .main .text {
     width: 50%;
-    height: 90%;
+    height: 95%;
     font-size: auto;
-    margin-top: 5%;
+    margin-top: 2.5%;
     overflow-y: auto;
 }
 
@@ -107,3 +126,4 @@ body {
     background-color: white;
     border-radius: 100px;
 }
+
