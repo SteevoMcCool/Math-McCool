@@ -1,0 +1,87 @@
+body {
+    background-image: linear-gradient(#a1e4e9, #e1ebf1,#a1e4e9,#40a6cd );
+}
+
+header h1 {
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+header h5 {
+    font-size: 200%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    text-align: center;    
+}
+
+.text {
+    background-color: white;
+    width: 98%;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.textwimage {
+    background-color: white;
+    width: 98%;
+    margin: 5px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;   
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.txt {
+    flex-grow: 3;
+    margin: 0px;
+    padding: 0px;
+}
+
+.textwimage img {
+    margin: 0px, 10px;
+    max-height: 200px;
+    max-width: 225px;
+    justify-self: center;
+    align-self: center;
+    margin: auto auto;
+    border-radius: 10px;
+}
+
+
+.text, .txt h2 {
+    margin: 5px auto;
+    text-align: left;
+    padding-left: 55px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+.text, .txt p {
+    margin: 0px;
+    margin-top: 10px;
+    padding-left: 25px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+    .textwimage {flex-wrap: wrap;}
+    .text, .txt p {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 6px;
+    }
+    .text, .txt h2 {
+        padding-left: 0px;
+
+        text-align: center;
+        text-justify: center;
+    }
+}
