@@ -59,8 +59,7 @@ body {
 #mommy .main {
     width:  90%;
     margin: 0px auto;
-    height: calc(95% - 75px);
-    background-color: beige;
+    height: calc(92.5% - 75px);
     display: flex;
     flex-wrap: nowrap;
 }
