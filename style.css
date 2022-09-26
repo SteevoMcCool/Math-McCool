@@ -32,7 +32,7 @@ body {
     margin: 2% 0px;
 }
 
-#mommy div {
+#mommy .box {
     width: 300px;
     min-width: 30%;
     max-width: 100%;
@@ -45,10 +45,30 @@ body {
     text-align: center;
 }
 
-#mommy div:hover {
+#mommy .box:hover {
     box-shadow: 0px 0px 29px #0a8fbd;
 }
 
 #mommy h2 {
-    
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#mommy .main {
+    width:  90%;
+    margin: 0px auto;
+    height: calc(95% - 75px);
+    background-color: beige;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.gridbg {
+    background-image: url("grid.png");
+    width: 50%;
+    height: 100%;
+    background-size: 50px;
+    background-repeat: repeat;
 }
