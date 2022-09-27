@@ -85,3 +85,30 @@ header h5 {
         text-justify: center;
     }
 }
+
+
+.lim {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:flex-start;
+    flex-direction: column;
+}
+
+.limMain {
+    font-size: 13px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.limBottom {
+    font-size: 9px;
+    font-style: italic;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.function {
+    font-size: 16px;
+    font-style: italic;
+}
