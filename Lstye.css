@@ -23,6 +23,7 @@ header h5 {
     width: 98%;
     margin: 5px auto;
     border-radius: 10px;
+    padding: 2px;
 }
 
 .textwimage {
@@ -32,20 +33,22 @@ header h5 {
     border-radius: 10px;
     display: flex;
     flex-wrap: nowrap;   
-    align-content: space-between;
-    justify-content: space-between;
+    align-content:stretch;
+    justify-content: stretch;
+    height: min-content;
 }
 
 .txt {
     flex-grow: 3;
     margin: 0px;
     padding: 0px;
+    height: 100%;
 }
 
 .textwimage img {
     margin: 0px, 10px;
     max-height: 200px;
-    max-width: 225px;
+    max-width: min-content;
     justify-self: center;
     align-self: center;
     margin: auto auto;
@@ -53,7 +56,7 @@ header h5 {
 }
 
 
-.text, .txt h2 {
+.text h2, .txt h2 {
     margin: 5px auto;
     text-align: left;
     padding-left: 55px;
@@ -64,21 +67,23 @@ header h5 {
     margin-bottom: 2px;
 }
 
-.text, .txt p {
+.text p, .txt p {
     margin: 0px;
     margin-top: 10px;
     padding-left: 25px;
     font-size: 15px;
+    position: relative;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 620px) {
     .textwimage {flex-wrap: wrap;}
-    .text, .txt p {
+    .text p, .txt p {
         padding-left: 10px;
         padding-right: 10px;
         margin-top: 6px;
     }
-    .text, .txt h2 {
+    .text p, .txt h2 {
         padding-left: 0px;
 
         text-align: center;
@@ -93,10 +98,11 @@ header h5 {
     justify-content: flex-start;
     align-content:flex-start;
     flex-direction: column;
+    position: relative;
 }
 
 .limMain {
-    font-size: 13px;
+    font-size: 15px;
     margin: 0px 0px;
     padding: 0px 0px;
 }
@@ -106,9 +112,71 @@ header h5 {
     font-style: italic;
     margin: 0px 0px;
     padding: 0px 0px;
+    position: relative;
+    bottom: 4px;
+    font-weight: 900;
 }
 
 .function {
     font-size: 16px;
     font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divi {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:flex-start;
+    flex-direction: column;
+    position: relative;
+    bottom: 6px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.num {
+    font-size: 10px;
+    margin: 0px 0px;
+    padding: 0px 0px; 
+    text-align: center;
+}
+.bar {
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: black;
+}
+
+#back {
+    background-color: #0a8fbd;
+    text-decoration: underline;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+#back a:link {
+    color: white
+}
+
+#back a:visited {
+    color: white
+}
+
+#back a:hover {
+    color: #00ffff;
+}
+
+@font-face {
+    font-family: "8bit";
+    src: url(slkscr.ttf);
+  }
+  
+                
+.gc {
+    font-family: "8bit", sans-serif;
 }

@@ -5,27 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Lstye.css">
     <title>Limits McCool</title>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/8bit-wonder');
+        </style>
 </head>
 <body>
     <header>
         <h1> Limits </h1>
         <h5> The behavoir of a function</h5>
         <br>
-        <div class="textwimage">
-            <div class="txt">
+        <div id="back"> <a href="index.html"> <-Back </a> </div>
+    </header>
+        <div class="text">
                 <h2>Definition Of Limits</h2>
-                <p>A limit of f(x) as x approaches a value descibes the behavoir of the function around that value.</p>
+                <p>A limit of f(x) as x approaches a value descibes the behavior of the function around that value.</p>
                 <p>In other words, a limit represents the y-value based on the function's curve, not the corresponding x-value. </p>
-            </div>
-            <img src="limits.png">
         </div>
         <div class="textwimage">
             <div class="txt">
                 <h2>Example of Limits</h2>
-                <p> Let's suppose we define <span class="function"> f(x) = (x-2)<sup>2</sup> &divide (x-2) </span> </p>
-                <p> Now, let's try to find <span class="lim"> <span class="lim"><span class="limMain">lim f(x)</span> <span class="limBottom">x->2</span> </span> </span> eeeeeee</p>
+                <p> Let's suppose we define <span class="function"> f(x) =  <span class="divi"> <span class="num">(x-2)<sup>2</sup></span> <span class="bar"></span> <span class="num"> x-2</span> </span> </span>. If we were to try and calculate <span class="function">f(2)</span> we would get an error.</p>
+                <p> This is because the denominator of <span class="function"> f(2)</span> is <span class="function">2-2</span>, which is zero. Since we cannot divide by zero, the <span class="function"> f(2) </span> is undefined. On the graph, there is a hole at <span class="function">x=2</span>.  </p>
+                <p> However, using any of <b>3 methods</b>, we can still find <span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->2</span></span> </p>
             </div>
+            <img src="f(x)1.png">
         </div>
-    </header>
+        <div class="textwimage">
+            <div class="txt">
+                <h2>Solving Limits Numerically (GC required)</h2>
+                <p>Let's suppose we have the previous example of  <span class="function"> f(x) </span> and would like to solve it numerically. This means we are going to use a table of values to determine the limit. </p>
+                <p>To get an accurate table of values on a graphing calculator, first enter the function in by pressing  <span class="gc">Y1</span> and typing the function into your calculator. Remember: Calculators follow pemdas, so parenthesis are important. Your function entry should look like <span class="gc">Y1=(x-2)<sup>2</sup>/(x-2) </span>. </p>
+                <p>Once done, you need to access the calculator's table settings. To do this, press <span class="gc">2nd</span> + <span class="gc">window</span> (located next to the <span class="gc">Y1</span> button). Leave the bottom two options on <span class="gc"> Auto</span></span></p>
+                <p>After that, change <span class="gc">TblStart</span> to the value that X is approaching. In this case, set  <span class="gc">TblStart=2</span>.Change the second option (Delta Table) to a relatively small number, <span class="function"><=0.01</span>.</p>
+            </div>
+            <img src="ti84.jpg">
+        </div>
+        <div class = "textwimage">
+            <div class="txt">
+                <p>Once you have your table set up, click <span class="gc">2nd</span> + <span class="gc">graph</span>. You should see a table similar to the table on the right. Scroll upwards until <span class="function">2</span> is in the middle.</p>
+                <p>As you can see, as the x-values get closer to <span class="function">2</span>, the y-values get closer to <span class="function">0</span>.</p>
+                <p>This means that we can conclude that <span class="lim"> <span class="limMain">lim f(x) = 0</span> <span class="limBottom">x->2</span></span></p>
+                <p>Remember, the limit is determined by the behavoir around the point. So even though the point is undefined, there is still a limit at that point.</p>
+                <br>
+                <p>In my personal opinion, this is the best way to calculate limits. It is fast, simple, and removes any major chance of human error. However, you won't have a graphing calculator for all parts of the AP exam, so it is important to learn the other ways to find limits.</p>
+            </div>
+            <img src="f(x)T.png">
+        </div>
 </body>
 </html>
