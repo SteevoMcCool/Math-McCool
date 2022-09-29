@@ -96,7 +96,7 @@ header h5 {
 
 .lim {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-content:flex-start;
     flex-direction: column;

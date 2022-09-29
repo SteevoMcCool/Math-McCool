@@ -58,5 +58,29 @@
             </div>
             <img src = "f(x)2.png">
         </div>
+        <div class = "text">
+            <h2>Solving Limits Algebraically</h2> 
+            <p>Let's define <span class="function">f(x) = <span class="divi"> <span class="num"> x<sup>2</sup>+5x+6 </span> <span class="bar"></span> <span class="num">x+3</span>  </span> </span> and attempt to find <span class="lim"><span class="limMain">lim f(x)</span> <span class="limBottom">x->-3</span> </span> </p>
+            <p>Your first step is to check if direct substiution will work by plugging <span class="function">-3</span> into the denominator. When you do this, you get <span class="function">-3 + 3 = 0</span>, which is a divide by zero error. Direct substiution won't work yet. </p>
+            <p>The next step is to check if <span class="function">x-3</span> is a factor of the numerator. To do this, you can factor the numerator using quadratic factorting, which results in <span class="function">(x+2)(x+3)</span>. Your function now looks like <span class="function">f(x) = <span class="divi"> <span class="num">(x+2)(x+3)</span> <span class="bar"></span> <span class="num">x+3</span> </span> </span> </p>
+            <p>You can then cancel the <span class="function">x+3</span> in the numerator with the <span class="function">x+3</span> in the denominator. This looks like <span class="function"> <span class="lim"> <span class="limMain">lim <span class="divi"> <span class="num">(x+2)<del>(x+3)</del></span> <span class="bar"></span> <span class="num"><del>x+3</del></span> </span>  </span><span class = "limBottom"  style="bottom: 16px;">x->-3</span> </span> = <span class="lim"> <span class="limMain">lim x+2 </span> <span class="limBottom"> x-> -3</span> </span> </span> </p>
+            <p>Now you can directly substitute <span class="function"">-3</span> into <span class="function">x+2 --> -3+2 --> -1 </span></p>
+           <p> <span class="lim"><span class="limMain">lim f(x) = -1 </span> <span class="limBottom">x->-3</span> </span> </p>
+        </div>
+
+        <div class="textwimage"> 
+        <div class="txt">
+            <h2>Where Limits Dont exist</h2>
+            <p>As much as I love limits, sadly, they don't always have my back. It's kind of an abusive relationship. Anyways, they wont always exist.</p>
+            <p>They wont exist when the left side of the function and the right side of the function approach different points (see example 1)</p>
+            <p>The limit wont exist if either side of the function approaches infinity (denote it as infinity, see example 2)</p>
+            <p>The linit wont exist if the function is oscilatting (going up and down rly fast). You can identify oscilation by checking if the frequency of waves is increasing exponentially. (see example 3)</p>
+            <p><b>The fourth image represents a false oscilation: the limit exists at all points there.</b> </p>
+        </div>
+            <img src="DNE1.png">
+            <img src="DNE2.jpg">
+            <img src="DNE3.jpg">
+            <img src="DNE4.png">
+        </div>
 </body>
 </html>
