@@ -69,18 +69,48 @@
         </div>
 
         <div class="textwimage"> 
-        <div class="txt">
-            <h2>Where Limits Dont exist</h2>
-            <p>As much as I love limits, sadly, they don't always have my back. It's kind of an abusive relationship. Anyways, they wont always exist.</p>
-            <p>They wont exist when the left side of the function and the right side of the function approach different points (see example 1)</p>
-            <p>The limit wont exist if either side of the function approaches infinity (denote it as infinity, see example 2)</p>
-            <p>The linit wont exist if the function is oscilatting (going up and down rly fast). You can identify oscilation by checking if the frequency of waves is increasing exponentially. (see example 3)</p>
-            <p><b>The fourth image represents a false oscilation: the limit exists at all points there.</b> </p>
-        </div>
+            <div class="txt" >
+                <h2>Where Limits Dont exist</h2>
+                <p>As much as I love limits, sadly, they don't always have my back. It's kind of an abusive relationship. Anyways, they wont always exist.</p>
+                <p>They wont exist when the left side of the function and the right side of the function approach different points (see example 1)</p>
+                <p>The limit wont exist if either side of the function approaches infinity (denote it as infinity, see example 2)</p>
+                <p>The linit wont exist if the function is oscilatting (going up and down rly fast). You can identify oscilation by checking if the frequency of waves is increasing exponentially. (see example 3)</p>
+                <p><b>The fourth image represents a false oscilation: the limit exists at all points there.</b> </p>
+            </div>
             <img src="DNE1.png">
             <img src="DNE2.jpg">
             <img src="DNE3.jpg">
             <img src="DNE4.png">
         </div>
+        <div class="textwimage">
+            <div class="txt" id="Jump">
+                <h2>One Sided Limits</h2>
+                <p>Let's denote <span class="function">f(x)</span> as the function that forms the graph on the right. Let's attempt to solve <span class="lim"><span class="limMain"> lim f(x) </span> <span class="limBottom">x->0</span> </span> graphically. </p>
+                <p>As you can see, the graph clearly approaches 1 from the right, and -1 from the left. However, as stated above, this means <span class="lim"><span class="limMain"> lim f(x) DNE </span> <span class="limBottom">x->0</span> </span> </p>
+                <p>However, if we wanted to determine the limit from the left, we would denote this as  <span class="lim"><span class="limMain"> lim f(x) </span> <span class="limBottom">x->0<sup>-</sup></span></span>. Notice the negative sign AFTER the zero. This only accounts for all the points left of zero, so the answer is <span class="function"> -1</span>. To repeat the process from the right, we would do <span class="lim"><span class="limMain"> lim f(x) = +1 </span> <span class="limBottom">x->0<sup>+</sup></span></span> </p>
+                <p>To solve this numerically, you can use a table similar to the one on the right, but only focus on the part of the table you need (for left-hand limits, use the top half of the table. For right-hand limits, use the bottom half). </p>
+            </div>
+            <img src="DNE1.png">
+            <img src="DNET.png">
+        </div>
+        <div class = "text">
+            <h2>Types of Discontinuities</h2>
+            <p>A continuous function is a function with no jumps, holes, or vertical asymtopes*. For example, <span class="function">y= e<sup>x</sup></span> is continuous, buy <span class="function"> y= 1/x </span> is not. You can prove continuity of <span class="function">f(x), x=c</span>  by stating <span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> = <span class="lim"> <span class="limMain">lim f(x) = f(c)</span> <span class="limBottom">x->c<sup>+</sup></span>   </span>                   </p>
+            <p> A removable discontinuity looks like a hole in the graph. Essentially, if you just shaded over that one point, the graph would be continuous. You can prove a removable discontinuity by stating <span class="function"><span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> = <span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>+</sup></span> </span>    </span>, and <span class="function"><span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> != f(c)   </span>  </p>
+            <p> A jump discontinuity looks like a gap between 2 points (refer to <a href = "#Jump">this function)</a>. You can prove a jump discontinuity by stating the left and right handed limits arent equal, but both limits exist.</p>
+            <p> You can prove an <b>INFINITE DISCONTINUITY</b> by proving at least one of the one-sided limits goes to infinity. This is also called a VERTICAL ASYMPTOPE </p>
+            <p> You won't recieve an oscilatting discontinuity, but in most cases, it follows the behavior of a removable discontinuity inside of a wavy function.</p>
+      </div>
+      <div class = "text">  
+        <h2> Advanced Algebraic Solving Pt1 (properties of limits) </h2>
+      </div>
+      <div class = "text">  
+        <h2> Advanced Algebraic Solving Pt2 (conjugates) </h2>
+      </div>
+      <div class="textwimage">
+        <div class="txt">
+            <h2>Limits to Infinity</h2>
+        </div>
+      </div>
 </body>
 </html>

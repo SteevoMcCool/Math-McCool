@@ -159,6 +159,7 @@ header h5 {
     left: 20px;
     padding: 6px;
     border-radius: 10px;
+    z-index: 1;
 }
 
 #back a:link {
