@@ -47,6 +47,62 @@ header h5 {
     height: 100%;
 }
 
+.a2line {
+    background-color: white;
+    width: 98%;
+    margin: calc(5px + 2.2%) auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.grid {
+    width: 40%;
+    background-color:#61e0f5;
+    margin: calc(5px + 2.2%) auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-row: auto auto auto auto;
+    grid-column: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+ 
+.grid h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.grid p {
+    font-size: 15px;
+}
+.grid > div {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+
+.fullRow {
+    grid-column: 1/5;
+}
+.column2to4 {
+    grid-row: 2/4;
+}
+
+.nomargin {
+    margin: 0px;  
+}
+.doubleRow {
+    text-align: center;
+    grid-column: 1/ span 2;
+}
+.doubleRow2 {
+    text-align: center;
+    grid-column: 3/ span 2;
+}
 .textwimage img {
     margin: 0px, 10px;
     max-height: 200px;
@@ -78,7 +134,7 @@ header h5 {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 700px) {
     .textwimage {flex-wrap: wrap;}
     .text p, .txt p {
         padding-left: 10px;
@@ -138,7 +194,7 @@ header h5 {
     padding: 0px;
 }
 
-.num {
+.num, .divi p {
     font-size: 10px;
     margin: 0px 0px;
     padding: 0px 0px; 
