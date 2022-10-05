@@ -104,15 +104,17 @@
             <p> You can prove an <b>INFINITE DISCONTINUITY</b> by proving at least one of the one-sided limits goes to infinity. This is also called a VERTICAL ASYMPTOPE </p>
             <p> You won't recieve an oscilatting discontinuity, but in most cases, it follows the behavior of a removable discontinuity inside of a wavy function.</p>
       </div>
-      <div class = "a2line">  
-       <div class="textwimage nomargin">
+       <div class="textwimage">
             <div class="txt">
             <h2>Properties Of Limits</h2>
             <p>The properities of limits say that, for any limit, you can separate any operation and take the limit of both parts. For example: </p>
             <p><span class="function"><span class="lim"><span class="limMain">lim f(x)*g(x)</span> <span class="limBottom">x->c</span> </span>  = <span class="lim"><span class="limMain">lim f(x)</span> <span class="limBottom">x->c</span> </span>  * <span class="lim"><span class="limMain">lim g(x)</span> <span class="limBottom">x->c</span> </span>|| &nbsp &nbsp ||<span class="lim"><span class="limMain">lim f(x) - g(x)</span> <span class="limBottom">x->c</span> </span>  = <span class="lim"><span class="limMain">lim f(x)</span> <span class="limBottom">x->c</span> </span>  - <span class="lim"><span class="limMain">lim g(x)</span> <span class="limBottom">x->c</span> </span> </span> </p>                                                                                                                                        
             <p> These rules apply for all operations, not just addition and subtraction. We can use these rules to solve limits of special values.</p>
             <p>Let's attempt to solve <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x </span> </span> + 1 </span> <span class="limBottom" style="bottom:16px;">x->0</span> </span> </p>
-            <p>Using the properties of limits, we know <span class="function"> <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span> + 1 </span> <span class="limBottom" style="bottom:16px;">x->0</span> </span> =   <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span>  + <span class="lim"><span class="limMain">lim 1 </span> <span class="limBottom">x->0</span> </span> </span></p>
+            <p>Using the properties of limits, we know <span class="function"> <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span> + 1 </span> <span class="limBottom" style="bottom:16px;">x->0</span> </span> =   <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span>  + <span class="lim"><span class="limMain">lim 1 </span> <span class="limBottom">x->0</span> </span> </span>. Since we know that the limit of a constant is the constant, we can rewrite this as <span class="function"> 1 + <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span></span></p>
+            <p>Let's multiply the limit by <span class="function">4/4</span>, aka one. When we do this, we get <span class="function"> 1 + <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> 4 * sin 4x</span> <span class="bar"></span> <span class="num">4x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span></span>, which we can now rewrite as <span class="function"> 1 + <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span></span>. Using properties of limits, we can separate this into, <span class="function"> 1 + <span class="lim"> <span class="limMain">lim 4</span> <span class="limBottom">x -> 0</span> </span> * <span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span></span>. </p>
+            <p>By remembering the table to the right, we can recognize that <span class="function"><span class="lim"><span class="limMain">lim <span class="divi"><span class="num"> sin 4x</span> <span class="bar"></span> <span class="num">x</span> </span></span> <span class="limBottom" style="bottom:16px;">x->0</span> </span> = 1</span>, as it follows the <span class="gc">Limits to Zero With Sine</span> rule.</p>
+            <p>After all simplification, we get <span class="function">1 + 4* 1</span>, which is <b>5</b></p>
             </div>
             <div class="grid">
                 <div class="fullRow"><h3 class="nomargin">You must Remember These Values</h3></div>
@@ -132,7 +134,6 @@
                 </div>
             </div>
         </div>
-      </div>
       <div class = "text">  
         <h2> Advanced Algebraic Solving (conjugates and properties) </h2>
       </div>

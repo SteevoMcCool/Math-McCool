@@ -60,7 +60,7 @@ header h5 {
 
 .grid {
     width: 40%;
-    min-width: 450px;
+    min-width: 400px;
     background-color:#61e0f5;
     margin: calc(5px + 2.2%) auto;
     margin-top: 10px;
