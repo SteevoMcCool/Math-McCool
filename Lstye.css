@@ -60,6 +60,7 @@ header h5 {
 
 .grid {
     width: 40%;
+    min-width: 450px;
     background-color:#61e0f5;
     margin: calc(5px + 2.2%) auto;
     margin-top: 10px;
@@ -134,7 +135,7 @@ header h5 {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .textwimage {flex-wrap: wrap;}
     .text p, .txt p {
         padding-left: 10px;
@@ -146,6 +147,9 @@ header h5 {
 
         text-align: center;
         text-justify: center;
+    }
+    .grid {
+        width: 80%;
     }
 }
 
