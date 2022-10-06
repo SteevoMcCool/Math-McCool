@@ -99,7 +99,7 @@
         <div class = "text">
             <h2>Types of Discontinuities</h2>
             <p>A continuous function is a function with no jumps, holes, or vertical asymtopes*. For example, <span class="function">y= e<sup>x</sup></span> is continuous, buy <span class="function"> y= 1/x </span> is not. You can prove continuity of <span class="function">f(x), x=c</span>  by stating <span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> = <span class="lim"> <span class="limMain">lim f(x) = f(c)</span> <span class="limBottom">x->c<sup>+</sup></span>   </span>                   </p>
-            <p> A removable discontinuity looks like a hole in the graph. Essentially, if you just shaded over that one point, the graph would be continuous. You can prove a removable discontinuity by stating <span class="function"><span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> = <span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>+</sup></span> </span>    </span>, and <span class="function"><span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> != f(c)   </span>  </p>
+            <p> A removable discontinuity looks like a hole in the graph. Essentially, if you just shaded over that one point, the graph would be continuous. You can prove a removable discontinuity by stating <span class="function"><span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> = <span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>+</sup></span> </span>    </span>, and <span class="function"><span class="lim"> <span class="limMain">lim f(x)</span> <span class="limBottom">x->c<sup>-</sup></span> </span> &ne; f(c)   </span>  </p>
             <p> A jump discontinuity looks like a gap between 2 points (refer to <a href = "#Jump">this function)</a>. You can prove a jump discontinuity by stating the left and right handed limits arent equal, but both limits exist.</p>
             <p> You can prove an <b>INFINITE DISCONTINUITY</b> by proving at least one of the one-sided limits goes to infinity. This is also called a VERTICAL ASYMPTOPE </p>
             <p> You won't recieve an oscilatting discontinuity, but in most cases, it follows the behavior of a removable discontinuity inside of a wavy function.</p>
@@ -123,7 +123,7 @@
                     <p> <span class="lim"><span class="limMain">lim <span class="divi"> <span class="num">sin(cx)</span> <span class="bar"></span> <span class="num">cx</span> </span> = 1 </span><span class="limBottom" style="bottom: 16px; right:27px">x->0</span></span></p> 
                     <p>Note that for this to work, the <span class="function">c</span> in the numerator must equal the <span class="function">c</span> in the denominator. Here is an example:</p> 
                     <p> <span class="lim"><span class="limMain">lim <span class="divi"> <span class="num">sin(6x)</span> <span class="bar"></span> <span class="num">6x</span> </span> = 1 </span><span class="limBottom" style="bottom: 16px; right:27px">x->0</span></span> &nbsp; <span class="lim"><span class="limMain">lim <span class="divi"> <span class="num">sin(4x)</span> <span class="bar"></span> <span class="num">3x</span> </span> = ?? </span><span class="limBottom" style="bottom: 16px; right:27px">x->0</span></span> </p> 
-                    <p>The second limit <span class="function"> !=1 </span> because <span class="function">4x != 3x</span> </p>
+                    <p>The second limit <span class="function"> &ne;1 </span> because <span class="function">4x &ne; 3x</span> </p>
                 </div>
                 <div class="doubleRow2"> 
                     <h3>Limit to Zero with Cosine</h3> 
@@ -134,12 +134,112 @@
                 </div>
             </div>
         </div>
-      <div class = "text">  
-        <h2> Advanced Algebraic Solving (conjugates and properties) </h2>
+      <div class = "textwimage">  
+        <div class = txt>
+            <h2> Advanced Algebraic Solving </h2>
+            <p>Now let's attemt to solve a tricky limit. <span class ="lim"> <span class="limMain">lim <span class="divi"> <span class="num">2 - &#8730(4-x)</span> <span class="bar"></span> <span class="num">x</span> </span> </span> <span class="limBottom" style="bottom:16px">x->0</span> </span>. Uh oh! Direct substitiution won't work and we can't cancel from numerator to denominator. Luckily, we can use conjugates to simplify this fraction and get the limit. First, we need to identify the conjugate of the numerator. The conjugate of the numerator is <span class="function">2 +  &#8730(4+x)</span>. All we did was change the sign in the middle. The next step is to multiply the limit by the conjugate over itself. </p>
+            <p>uh oh here goes nth</p>
+            <p><span class="function"><span class="lim"><span class="limMain">lim <span class="divi"> <span class="num">2 - &#8730(4-x)</span> <span class="bar"></span> <span class="num">x</span> </span> </span> <span class="limBottom" style="bottom: 16px;">x ->0</span>  </span>  *  <span class="divi"> <span class="num"> 2 + &#8730(4-x) </span> <span class="bar"></span> <span class="num">2 + &#8730(4-x)</span></span></span>. After all simplification, you should get <span class="lim"><span class="limMain">lim <span class="divi"> <span class="num">4 -(4-x)</span> <span class="bar"></span> <span class="num">x(2 + &#8730(4-x))</span> </span> </span> <span class="limBottom" style="bottom: 16px;">x ->0</span> </span> Once done, you can further simplify the numerator as such: <span class="function">4-(4-x) = 4-4+x = x</span>. Now you can cancel the <span class="function">x</span> in the denominator with the <span class="function">x</span> in the numerator. Your new limit should look like:</p>
+            <p><span class="lim"><span class="limMain">lim <span class="divi"> <span class="num">1</span> <span class="bar"></span> <span class="num">2 + &#8730(4-x)</span> </span> </span> <span class="limBottom" style="bottom: 16px;">x ->0</span>  </span>. Now you can direct substitute and get <span class="function">1/4</span> as your answer. </p>
+        </div>
+        <img src="conj.jpg">
       </div>
-      <div class="textwimage">
-        <div class="txt">
+      <div class="text">
             <h2>Limits to Infinity</h2>
+            <p>You should know the basic shapes of graphs and functions. For exapmle, <span class="function">f(x)=x<sup>2</sup> - x + 1</span> is a parabola. But what if we did: <span class="lim"><span class="limMain">lim x<sup>2</sup> - x + 1</span> <span class="limBottom">x->&infin;</span> </span>. To do this, we use an <b>end behavior model (EBM)</b>.</p>
+            <p>An EBM is a shorthand way to describe how a function behaves as it gets closer and closer to infinity. The EBM of all polynomial functions is the term with the highest degree. </p>
+            <p>An EBM can be for only the left (LEBM) or the right (REBM) of a function. To prove <span class="function">E(x)</span> is a LEBM of <span class="function">f(x)</span>, you must prove <span class="function"><span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">f(x)</span> <span class="bar"></span> <span class="num">E(x)</span> </span> = 1</span> <span class="limBottom" style="bottom: 16px">x->-&infin;</span></span>, and to prove REBM: <span class="function"><span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">f(x)</span> <span class="bar"></span> <span class="num">E(x)</span> </span> = 1</span> <span class="limBottom" style="bottom: 16px">x->+&infin;</span></span> </span></p>
+            <p>If either EBM is a constant  (ie <span class="function">LEBM of f(X)=4</span>), then that constant is a <b>Horizonatl Asymtope</b> of that function.</p>
+            <p>Let's do 2 examples. First, let's return to our original function, <span class="function">f(x)=x<sup>2</sup> - x + 1</span>. We know the EBM of this function is <span class="function">E(x)=x<sup>2</sup></span>, but now, let's prove it. To do this, we must keep in mind the shape of <span class="divi" style="top:0px"> <span class="num">1</span> <span class="bar"></span> <span class="num">x</span>.</span> To to this, we need to do  <span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">x<sup>2</sup> - x + 1</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup>></span> </span> </span> <span class="limBottom" style="bottom: 16px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span></span>. Using alegbra, this limit is equal to <span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span> - <span class="divi"><span class="num">x</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span> + <span class="divi"><span class="num">2</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span> <span class="limBottom" style="bottom: 16px; right:8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span></span>. Using properties of limits, we can break this down even further, into:
+            <span class="function">
+                <span class="lim">
+                    <span class = "limMain">lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                    <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                </span> - 
+                <span class="lim">
+                    <span class = "limMain">lim <span class="divi"><span class="num">x</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                    <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                </span> + 
+                <span class="lim">
+                    <span class = "limMain">lim <span class="divi"><span class="num">2</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                    <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                </span>
+            </span>. </p> <p>Now we can solve each limit individually. First we know 
+            <span class="function">
+                <span class="lim">
+                    <span class = "limMain">lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                    <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                </span> = 1
+            </span>, because the numerator and the denominator reduce completely to one. Secondly, you can cancel an <span class="function">x</span> from the numerator and the denominator.
+            <span class="function">
+                <span class="lim">
+                    <span class = "limMain">lim <span class="divi"><span class="num"><del>x</del></span> <span class="bar"></span> <span class="num">x * <del>x</del></sup></span> </span></span>
+                    <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                </span> =  
+                <span class="lim">
+                    <span class = "limMain">lim <span class="divi"><span class="num">1</span> <span class="bar"></span> <span class="num">x</span> </span></span>
+                    <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                </span>.
+            </span>  If you remember the shape of this common function, you'd know this limit to +&infin; or -&infin; is zero (therefore there is a horizontal asymtope for <span class="function">1/x</span> at <span class="function">y=0</span>). Finally, we have:
+            <span class="lim">
+                <span class = "limMain">lim <span class="divi"><span class="num">2</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+            </span>. We also know this graph has a horizontal asymtope at <span class="function">x=0</span>, so this limit is also zero, 
+            </p>
+            <p> After solving all those limits, we did
+                <span class="function">
+                    <span class="lim">
+                        <span class = "limMain">lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                        <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                    </span> - 
+                    <span class="lim">
+                        <span class = "limMain">lim <span class="divi"><span class="num">x</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                        <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                    </span> + 
+                    <span class="lim">
+                        <span class = "limMain">lim <span class="divi"><span class="num">2</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
+                        <span class="limBottom" style="bottom: 18px; right: 8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span>
+                    </span> =
+                    1 - 0 + 0 = 1.
+                </span>. 
+                Since this limit is 1, we know <span class="function">E(x)=x<sup>2</sup></span> is the LEBM, REBM, and EBM of <span class="function">f(x)=x<sup>2</sup> - x + 1</span>
+            </p>
+      </div>
+      <div class="Mgrid" style="grid-template-columns: auto auto auto;">
+        <div style="grid-column: 1/4;"> <h3 class="nomargin">Shortcuts with horizontal asymtopes</h3> <center> <p class="nomargin" style="margin-top: 2px;">Use the EBM (aka highest degree) in the numerator and denominator to determine the horizontal asymtope.</p> </center> </div>
+        <div> 
+            <h3 class="nomargin">High-Degree Denominator</h3>
+            <p>When the highest degree in your denominator is greater than the highest degree in your numerator, the horizontal asymtope is always <span class="function">x=0</span> </p>
+            <p><span class="function"> f(x) =
+                <span class = "divi">
+                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup>-x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
+                    <span class="num">-8x<sup><b>5</b></sup> + 4 </span>
+                </span>
+            </span> </p>
+            <p>Since <span class="function">5 > 4</span>, the highest degree of the denominator is greater than the highest degree of the numerator, so <span class="function">f(x)</span> has a horizontal asymtope at <span class="function">x=0</span> </p>
+        </div>
+        <div>
+            <h3 class="nomargin">Even-Degree Fraction</h3>
+            <p>When the highest degree in your denominator equals the highest degree in your numerator, the horizontal asymtope is their coefficents divided by eachother </p>
+            <p><span class="function"> f(x) =
+                <span class = "divi">
+                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup>-x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
+                    <span class="num">-8x<sup><b>4</b></sup>  + 4</span>
+                </span>
+            </span> </p>
+            <p>Since <span class="function">4 = 4</span>, we need to divide <span class="divi"><span class="num">2</span><span class="bar"></span><span class="num">-8</span></span> to get a horizontal asymptope of <span class="function">f(x)</span> at <span class="function">x=-1/4 </span> </p>
+        </div>
+        <div>
+            <h3 class="nomargin">High-Degree Numerator</h3>
+            <p>When the highest degree in your denominator is less than the highest degree in your numerator, there is no horizontal asymtope</p>
+            <p><span class="function"> f(x) =
+                <span class = "divi">
+                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup>-x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
+                    <span class="num">-8x<sup><b>3</b></sup> + 4 </span>
+                </span> &nbsp; &nbsp;
+            </span><span class="function"> g(x) = 4x</span>  
+            </p>
+            <p>Since <span class="function">3 < 4</span>, the highest degree of the denominator is less than the highest degree of the numerator, so <span class="function">f(x)</span> no horizontal asymptope. For similar reasons, g(x) has no horizontal asymptope. </p>
         </div>
       </div>
 </body>

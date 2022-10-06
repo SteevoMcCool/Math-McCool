@@ -72,17 +72,38 @@ header h5 {
     row-gap: 10px;
     padding: 10px;
 }
+.Mgrid {
+    width: 40%;
+    background-color:white;
+    width: 98%;
+    margin: calc(5px + 2.2%) auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: grid;
+    grid-row: auto auto auto auto;
+    grid-column: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
  
-.grid h3 {
+.grid h3, .Mgrid h3 {
     font-size: 20px;
     font-weight: 300;
     text-align: center;
 }
-.grid p {
+.grid p, .Mgrid p {
     font-size: 15px;
+    text-align: center;
 }
 .grid > div {
     background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+
+.Mgrid > div {
+    background-color: rgba(240,240,240,0.45);
+    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -92,6 +113,7 @@ header h5 {
 .column2to4 {
     grid-row: 2/4;
 }
+
 
 .nomargin {
     margin: 0px;  
