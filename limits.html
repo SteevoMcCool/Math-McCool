@@ -145,12 +145,13 @@
         <img src="conj.jpg">
       </div>
       <div class="text">
-            <h2>Limits to Infinity</h2>
+            <h2>Limits to Infinity/ End Behavior Model</h2>
             <p>You should know the basic shapes of graphs and functions. For exapmle, <span class="function">f(x)=x<sup>2</sup> - x + 1</span> is a parabola. But what if we did: <span class="lim"><span class="limMain">lim x<sup>2</sup> - x + 1</span> <span class="limBottom">x->&infin;</span> </span>. To do this, we use an <b>end behavior model (EBM)</b>.</p>
-            <p>An EBM is a shorthand way to describe how a function behaves as it gets closer and closer to infinity. The EBM of all polynomial functions is the term with the highest degree. </p>
+            <p>An EBM is a shorthand way to describe how a function behaves as it gets closer and closer to infinity. <b> <u>The EBM of all polynomial functions is the term with the highest degree.</u> </b></p>
             <p>An EBM can be for only the left (LEBM) or the right (REBM) of a function. To prove <span class="function">E(x)</span> is a LEBM of <span class="function">f(x)</span>, you must prove <span class="function"><span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">f(x)</span> <span class="bar"></span> <span class="num">E(x)</span> </span> = 1</span> <span class="limBottom" style="bottom: 16px">x->-&infin;</span></span>, and to prove REBM: <span class="function"><span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">f(x)</span> <span class="bar"></span> <span class="num">E(x)</span> </span> = 1</span> <span class="limBottom" style="bottom: 16px">x->+&infin;</span></span> </span></p>
             <p>If either EBM is a constant  (ie <span class="function">LEBM of f(X)=4</span>), then that constant is a <b>Horizonatl Asymtope</b> of that function.</p>
-            <p>Let's do 2 examples. First, let's return to our original function, <span class="function">f(x)=x<sup>2</sup> - x + 1</span>. We know the EBM of this function is <span class="function">E(x)=x<sup>2</sup></span>, but now, let's prove it. To do this, we must keep in mind the shape of <span class="divi" style="top:0px"> <span class="num">1</span> <span class="bar"></span> <span class="num">x</span>.</span> To to this, we need to do  <span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">x<sup>2</sup> - x + 1</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup>></span> </span> </span> <span class="limBottom" style="bottom: 16px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span></span>. Using alegbra, this limit is equal to <span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span> - <span class="divi"><span class="num">x</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span> + <span class="divi"><span class="num">2</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span> <span class="limBottom" style="bottom: 16px; right:8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span></span>. Using properties of limits, we can break this down even further, into:
+            
+            <p>Let's do 2 examples. First, let's return to our original function, <span class="function">f(x)=x<sup>2</sup> - x + 1</span>. We know the EBM of this function is <span class="function">E(x)=x<sup>2</sup></span>, but now, let's prove it. To do this, we must keep in mind the shape of y=<span class="divi"> <span class="num">1</span> <span class="bar"></span> <span class="num">x</span>.</span> For this proof, we need to do  <span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">x<sup>2</sup> - x + 1</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup>></span> </span> </span> <span class="limBottom" style="bottom: 16px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span></span>. Using alegbra, this limit is equal to <span class="lim"><span class="limMain"> lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span> - <span class="divi"><span class="num">x</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span> + <span class="divi"><span class="num">2</span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span> <span class="limBottom" style="bottom: 16px; right:8px">x-> <span style="font-size: 4px;">&#8723;</span> &infin;</span></span>. Using properties of limits, we can break this down even further, into:
             <span class="function">
                 <span class="lim">
                     <span class = "limMain">lim <span class="divi"><span class="num">x<sup>2</sup></span> <span class="bar"></span> <span class="num">x<sup>2</sup></span> </span></span>
@@ -203,6 +204,7 @@
                     1 - 0 + 0 = 1.
                 </span>. 
                 Since this limit is 1, we know <span class="function">E(x)=x<sup>2</sup></span> is the LEBM, REBM, and EBM of <span class="function">f(x)=x<sup>2</sup> - x + 1</span>
+                <p> For the second example, we will find the EBM of <span class="function">x<sup>2</sup> + 3<sup>x</sup></span>. AH, we have a PROBLEMO! One of the exponents is a variable, so how would we know which term has the higher degree. Well, we know that when <span class="function"> x < 2</span>, the exponent of <span class="function">3<sup>x</sup></span> is also going to be less than 2. Which means that since as x goes to the left, where all numbers are <span class="function"> < 2 </span>, we know that <span class="function">E<sub>L</sub>(x)= x<sup>2</sup></span> is the LEMB. This also means we know that <span class="function">E<sub>R</sub>(x)= 3<sup>x</sup></span> is the REBM.</p>
             </p>
       </div>
       <div class="Mgrid" style="grid-template-columns: auto auto auto;">
@@ -212,7 +214,7 @@
             <p>When the highest degree in your denominator is greater than the highest degree in your numerator, the horizontal asymtope is always <span class="function">x=0</span> </p>
             <p><span class="function"> f(x) =
                 <span class = "divi">
-                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup>-x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
+                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup> -x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
                     <span class="num">-8x<sup><b>5</b></sup> + 4 </span>
                 </span>
             </span> </p>
@@ -223,7 +225,7 @@
             <p>When the highest degree in your denominator equals the highest degree in your numerator, the horizontal asymtope is their coefficents divided by eachother </p>
             <p><span class="function"> f(x) =
                 <span class = "divi">
-                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup>-x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
+                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup> -x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
                     <span class="num">-8x<sup><b>4</b></sup>  + 4</span>
                 </span>
             </span> </p>
@@ -234,7 +236,7 @@
             <p>When the highest degree in your denominator is less than the highest degree in your numerator, there is no horizontal asymtope</p>
             <p><span class="function"> f(x) =
                 <span class = "divi">
-                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup>-x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
+                    <span class="num">x<sup>3</sup> + 2x<sup><b>4</b></sup> -x<sup>2</sup> + 5x - 2</span> <span class="bar"></span>
                     <span class="num">-8x<sup><b>3</b></sup> + 4 </span>
                 </span> &nbsp; &nbsp;
             </span><span class="function"> g(x) = 4x</span>  
@@ -242,5 +244,49 @@
             <p>Since <span class="function">3 < 4</span>, the highest degree of the denominator is less than the highest degree of the numerator, so <span class="function">f(x)</span> no horizontal asymptope. For similar reasons, g(x) has no horizontal asymptope. </p>
         </div>
       </div>
+      <div class="Mgrid">
+        <div class="fullRow"><h3 class="nomargin">Squeeze Theorem, Reciprocal Theorem</h3></div>
+        <div class="doubleRow">
+            <h3>The Squeeze/Sandwhich Theorem</h3>
+            <p>This Theorem attempts to find the limit of a function by "Sandwhiching" or squeezing it between 2 other functions.</p>
+            <p><span class="lim">
+                <span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span>
+                <span class="limBottom">x -> 0</span>
+            </span></p>
+            <p>Since direct substitiotion won't work, we can Sandwhich this function between 2 functions. We know that sin() of anything is always inbetween -1 and 1, so we can say:</p>
+            <p><span class="function">-1 &#8804 sin(<sup>1</sup>/<sub>x</sub>) &#8804 1</span> </p>
+            <p>Now, we can multiply the entire inequality by x<sup>2</sup> to get: <span class="function">-x<sup>2</sup> &#8804 x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>) &#8804 x<sup>2</sup></span> Now let's take the limit to zero of all these:</p>
+            <p>
+            <span class="function">
+                <span class="lim" style="text-align: left;"><span class="limMain"> lim -x<sup>2</sup> </span><span class="limBottom">x->0</span></span>
+                &#8804 
+                <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span> <span class="limBottom">x->0</span> </span>
+                &#8804 
+                <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup></span><span class="limBottom" >x->0</span></span>
+                &nbsp; = &nbsp; 0 &#8804 <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span> <span class="limBottom">x->0</span> </span> &#8804 0
+                Then boom! We know the answer is inbetween zero and zero, so we know the answer is zero!
+            </span>  
+            </p>          
+        </div>
+        <div class="doubleRow2">
+            <h3>The Reciprocal Theorem</h3>
+            <p>This Theorem attempts to find the limit of a <span class="function">f(x)</span> to zero by taking the limit of the <span class="function">f(<sup>1</sup>/<sub>x</sub>)</span> to infinity </p>
+            <p><span class="lim">
+                <span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span>
+                <span class="limBottom">x -> 0</span>
+            </span></p>
+            <p>Since direct substitiotion won't work, we can Recipricol this function. When we do that, we get  <sup>1</sup>/<sub>x<sup>2</sup></sub> * sin(x)</p>
+            <p>Now we need to find <span class="lim" style="text-align:left">
+                <span class="limMain" style="text-align:left">lim <sup>1</sup>/<sub>x<sup>2</sup></sub> * sin(x)</span>
+                <span class="limBottom">x -> &infin;</span>
+            </span></p>
+            <p>Then very easily, we know that the end behavior rules will follow <sup>1</sup>/<sub>x<sup>2</sup></sub>. This is because as <span class="function">x-> &infin;</span>, x continuously gets bigger (meaning <sup>1</sup>/<sub>x<sup>2</sup></sub> gets a lot smaller), whereas sin(x) is always inbetween -1 and 1. Therefore, we know this limit is the same as   
+            <span class="lim">
+                <span class="limMain">lim <sup>1</sup>/<sub>x<sup>2</sup></sub></span>
+                <span class="limBottom">x -> &infin;</span>
+            </span>, which is zero :)</p>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
