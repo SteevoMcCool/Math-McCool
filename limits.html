@@ -67,7 +67,50 @@
             <p>Now you can directly substitute <span class="function"">-3</span> into <span class="function">x+2 --> -3+2 --> -1 </span></p>
            <p> <span class="lim"><span class="limMain">lim f(x) = -1 </span> <span class="limBottom">x->-3</span> </span> </p>
         </div>
-
+        <div class="Mgrid">
+            <div class="fullRow"><h3 class="nomargin">Squeeze Theorem, Reciprocal Theorem</h3></div>
+            <div class="doubleRow">
+                <h3>The Squeeze/Sandwhich Theorem</h3>
+                <p>This Theorem attempts to find the limit of a function by "Sandwhiching" or squeezing it between 2 other functions.</p>
+                <p><span class="lim">
+                    <span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span>
+                    <span class="limBottom">x -> 0</span>
+                </span></p>
+                <p>Since direct substitiotion won't work, we can Sandwhich this function between 2 functions. We know that sin() of anything is always inbetween -1 and 1, so we can say:</p>
+                <p><span class="function">-1 &#8804 sin(<sup>1</sup>/<sub>x</sub>) &#8804 1</span> </p>
+                <p>Now, we can multiply the entire inequality by x<sup>2</sup> to get: <span class="function">-x<sup>2</sup> &#8804 x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>) &#8804 x<sup>2</sup></span> Now let's take the limit to zero of all these:</p>
+                <p>
+                <span class="function">
+                    <span class="lim" style="text-align: left;"><span class="limMain"> lim -x<sup>2</sup> </span><span class="limBottom">x->0</span></span>
+                    &#8804 
+                    <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span> <span class="limBottom">x->0</span> </span>
+                    &#8804 
+                    <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup></span><span class="limBottom" >x->0</span></span>
+                    &nbsp; = &nbsp; 0 &#8804 <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span> <span class="limBottom">x->0</span> </span> &#8804 0
+                    Then boom! We know the answer is inbetween zero and zero, so we know the answer is zero!
+                </span>  
+                </p>          
+            </div>
+            <div class="doubleRow2">
+                <h3>The Reciprocal Theorem</h3>
+                <p>This Theorem attempts to find the limit of a <span class="function">f(x)</span> to zero by taking the limit of the <span class="function">f(<sup>1</sup>/<sub>x</sub>)</span> to infinity </p>
+                <p><span class="lim">
+                    <span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span>
+                    <span class="limBottom">x -> 0</span>
+                </span></p>
+                <p>Since direct substitiotion won't work, we can Recipricol this function. When we do that, we get  <sup>1</sup>/<sub>x<sup>2</sup></sub> * sin(x)</p>
+                <p>Now we need to find <span class="lim" style="text-align:left">
+                    <span class="limMain" style="text-align:left">lim <sup>1</sup>/<sub>x<sup>2</sup></sub> * sin(x)</span>
+                    <span class="limBottom">x -> &infin;</span>
+                </span></p>
+                <p>Then very easily, we know that the end behavior rules will follow <sup>1</sup>/<sub>x<sup>2</sup></sub>. This is because as <span class="function">x-> &infin;</span>, x continuously gets bigger (meaning <sup>1</sup>/<sub>x<sup>2</sup></sub> gets a lot smaller), whereas sin(x) is always inbetween -1 and 1. Therefore, we know this limit is the same as   
+                <span class="lim">
+                    <span class="limMain">lim <sup>1</sup>/<sub>x<sup>2</sup></sub></span>
+                    <span class="limBottom">x -> &infin;</span>
+                </span>, which is zero :). For more on end behavior and limits to infinity, <a href="#infinf">click here</a></p>
+                </p>
+            </div>
+        </div>
         <div class="a2line"> 
             <div class="text nomargin" >
                 <h2>Where Limits Dont exist</h2>
@@ -85,6 +128,7 @@
             </div>
             <br>
         </div>
+
         <div class="textwimage">
             <div class="txt" id="Jump">
                 <h2>One Sided Limits</h2>
@@ -144,7 +188,7 @@
         </div>
         <img src="conj.jpg">
       </div>
-      <div class="text">
+      <div class="text" id ="infinf">
             <h2>Limits to Infinity/ End Behavior Model</h2>
             <p>You should know the basic shapes of graphs and functions. For exapmle, <span class="function">f(x)=x<sup>2</sup> - x + 1</span> is a parabola. But what if we did: <span class="lim"><span class="limMain">lim x<sup>2</sup> - x + 1</span> <span class="limBottom">x->&infin;</span> </span>. To do this, we use an <b>end behavior model (EBM)</b>.</p>
             <p>An EBM is a shorthand way to describe how a function behaves as it gets closer and closer to infinity. <b> <u>The EBM of all polynomial functions is the term with the highest degree.</u> </b></p>
@@ -244,49 +288,6 @@
             <p>Since <span class="function">3 < 4</span>, the highest degree of the denominator is less than the highest degree of the numerator, so <span class="function">f(x)</span> no horizontal asymptope. For similar reasons, g(x) has no horizontal asymptope. </p>
         </div>
       </div>
-      <div class="Mgrid">
-        <div class="fullRow"><h3 class="nomargin">Squeeze Theorem, Reciprocal Theorem</h3></div>
-        <div class="doubleRow">
-            <h3>The Squeeze/Sandwhich Theorem</h3>
-            <p>This Theorem attempts to find the limit of a function by "Sandwhiching" or squeezing it between 2 other functions.</p>
-            <p><span class="lim">
-                <span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span>
-                <span class="limBottom">x -> 0</span>
-            </span></p>
-            <p>Since direct substitiotion won't work, we can Sandwhich this function between 2 functions. We know that sin() of anything is always inbetween -1 and 1, so we can say:</p>
-            <p><span class="function">-1 &#8804 sin(<sup>1</sup>/<sub>x</sub>) &#8804 1</span> </p>
-            <p>Now, we can multiply the entire inequality by x<sup>2</sup> to get: <span class="function">-x<sup>2</sup> &#8804 x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>) &#8804 x<sup>2</sup></span> Now let's take the limit to zero of all these:</p>
-            <p>
-            <span class="function">
-                <span class="lim" style="text-align: left;"><span class="limMain"> lim -x<sup>2</sup> </span><span class="limBottom">x->0</span></span>
-                &#8804 
-                <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span> <span class="limBottom">x->0</span> </span>
-                &#8804 
-                <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup></span><span class="limBottom" >x->0</span></span>
-                &nbsp; = &nbsp; 0 &#8804 <span class="lim" style="text-align: left;"><span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span> <span class="limBottom">x->0</span> </span> &#8804 0
-                Then boom! We know the answer is inbetween zero and zero, so we know the answer is zero!
-            </span>  
-            </p>          
-        </div>
-        <div class="doubleRow2">
-            <h3>The Reciprocal Theorem</h3>
-            <p>This Theorem attempts to find the limit of a <span class="function">f(x)</span> to zero by taking the limit of the <span class="function">f(<sup>1</sup>/<sub>x</sub>)</span> to infinity </p>
-            <p><span class="lim">
-                <span class="limMain">lim x<sup>2</sup> * sin(<sup>1</sup>/<sub>x</sub>)</span>
-                <span class="limBottom">x -> 0</span>
-            </span></p>
-            <p>Since direct substitiotion won't work, we can Recipricol this function. When we do that, we get  <sup>1</sup>/<sub>x<sup>2</sup></sub> * sin(x)</p>
-            <p>Now we need to find <span class="lim" style="text-align:left">
-                <span class="limMain" style="text-align:left">lim <sup>1</sup>/<sub>x<sup>2</sup></sub> * sin(x)</span>
-                <span class="limBottom">x -> &infin;</span>
-            </span></p>
-            <p>Then very easily, we know that the end behavior rules will follow <sup>1</sup>/<sub>x<sup>2</sup></sub>. This is because as <span class="function">x-> &infin;</span>, x continuously gets bigger (meaning <sup>1</sup>/<sub>x<sup>2</sup></sub> gets a lot smaller), whereas sin(x) is always inbetween -1 and 1. Therefore, we know this limit is the same as   
-            <span class="lim">
-                <span class="limMain">lim <sup>1</sup>/<sub>x<sup>2</sup></sub></span>
-                <span class="limBottom">x -> &infin;</span>
-            </span>, which is zero :)</p>
-            </p>
-        </div>
-    </div>
+
 </body>
 </html>
