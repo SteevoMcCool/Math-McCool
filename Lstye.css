@@ -197,7 +197,7 @@ header h5 {
     margin: 0px 0px;
     padding: 0px 0px;
     position: relative;
-    bottom: 4px;
+    transform: translate(0px, -4px);
     font-weight: 900;
 }
 
@@ -215,13 +215,13 @@ header h5 {
     align-content:flex-start;
     flex-direction: column;
     position: relative;
-    bottom: 6px;
+    transform: translate(0px, -8px);
     margin: 0px;
     padding: 0px;
 }
 
 .num, .divi p {
-    font-size: 10px;
+    font-size: 11px;
     margin: 0px 0px;
     padding: 0px 0px; 
     text-align: center;
